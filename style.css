@@ -1,0 +1,159 @@
+/* primeira coisa a se fazer é linkar o css no html*/
+/* depois, vamos criar o reset.css para remover o espaçamento padrão do navegador */   
+/* e o box-sizing para que o padding e border sejam incluídos no tamanho total do elemento */ 
+/* https://github.com/rafaballerini/meu-site-html-css/blob/main/style.css materiais no github */
+/* vamos também importar a fonte Cabin do Google Fonts para estilizar o texto do site */
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+   
+*{                  /*o asterisco <*> é um seletor universal que seleciona todos os elementos da página */
+    margin: 0;                  /*remove o espaçamento padrão do navegador, deixando zerado */
+    padding: 0;                 /*remove o espaçamento padrão do navegador, deixando zerado, , padding é uma propriedade que define o espaço interno entre o conteúdo de um elemento e suas bordas. */  
+    box-sizing: border-box;     /*faz com que o padding e border sejam incluídos no tamanho total do elemento */
+}
+
+body {                                 /*body (corpo), nesse caso estamos estilizando o body do site */    
+    background-color: #F4F0EA;      /*cor de fundo do body, nesse caso estão no padrão hexadecimal*/
+    color: #798252;                 /*cor do texto, também em hexadecimal*/
+    font-family: "Cabin", sans-serif; /*define a fonte do texto, nesse caso estamos usando a fonte Cabin do Google Fonts, e o sans-serif é uma fonte genérica que será usada como fallback caso a fonte Cabin não esteja disponível*/
+    font-weight: 400;                 /*tamanho da fonte*/
+}
+
+header {                            /*header, nesse caso estamos usando o header para exibir o cabeçalho do site */ 
+    padding: 2rem;                  /*padding do header, nesse caso estamos usando 2 rem de padding no topo e embaixo, e 0 rem nas laterais */
+    background-color: #331F19;    /*cor de fundo do header, nesse caso estamos usando a mesma cor do body */
+    text-align: center;             /*alinhamento do texto no centro do header */
+}
+
+main {                             /*main, nesse caso estamos usando o main para exibir o conteúdo principal do site */  
+    padding: 2rem;                 /*padding do main, nesse caso estamos usando 2 rem de padding em todos os lados */
+    display: flex;                 /*display flex para que os elementos dentro do main sejam exibidos em linha */
+    flex-direction: column;        /*direção dos elementos dentro do main, nesse caso estamos usando coluna para que os elementos sejam exibidos em coluna */
+    gap: 1.5rem;                   /*espaçamento entre os elementos dentro do main, nesse caso estamos usando 2 rem de espaçamento */
+}
+
+section {                          /*section, nesse caso estamos usando a section para exibir uma seção do site */
+    display: flex;                 /*display flex serve para que os elementos dentro da section sejam exibidos em linha */
+    flex-direction: column;        /*direção dos elementos dentro da section, nesse caso estamos usando coluna para que os elementos sejam exibidos em coluna */
+    gap: 1rem;                     /*espaçamento entre os elementos dentro da section, nesse caso estamos usando 1.5 rem de espaçamento */
+}
+
+h2{                                 /*h2, nesse caso estamos usando o h2 para exibir um título secundário do site */   
+    color: #331F19;               /*cor do h2, nesse caso estamos usando a mesma cor do header */
+    font-size: 1.2rem;              /*tamanho da fonte do h2, nesse caso estamos usando 1.2 rem */
+}
+
+input[type= "radio"], input[type= "checkbox"] {   /*input do tipo rádio e checkbox, nesse caso estamos usando o input do tipo rádio e checkbox */
+    accent-color: #CCD595;                      /*cor do botão de rádio, nesse caso estamos usando a cor #CCD595 */
+}
+
+input [type= "text"], input[type= "password"],  input[type= "date"],  input[type= "email"]{ /*input do tipo texto, email e senha, nesse caso estamos usando o input do tipo texto, email e senha */
+    width: 100%;                    /* <width> refere-se a largura do input de texto, nesse caso estamos usando 100% para que o input ocupe toda a largura disponível */
+    padding: 0.6rem;                /*padding do input de texto, nesse caso estamos usando 0.6 rem de padding em todos os lados */
+    border: 2px solid #CCD595;    /*borda do input de texto, nesse caso estamos usando 2 px de borda sólida na cor #CCD595 */
+    outline: none;                  /*remove o contorno do input de texto, nesse caso estamos usando none para remover o contorno */
+    border-radius: 5px;             /*borda arredondada do input de texto, nesse caso estamos usando 5 px de borda arredondada */
+    background-color: transparent;   /*cor de fundo do input de texto, nesse caso estamos usando transparente */
+}
+
+input::placeholder {    /*placeholder do input de texto, nesse caso estamos usando o placeholder para exibir um texto de exemplo dentro do input */
+    color: #CBBBA7;   /*cor do placeholder, nesse caso estamos usando a cor #CBBBA7 */
+}   
+
+select{                             /*select, nesse caso estamos usando o select para exibir uma lista de opções */
+    cursor: pointer;                /*cursor do select, nesse caso estamos usando pointer para que o cursor seja exibido como uma mãozinha quando o usuário passar o mouse sobre o select */    
+    background-color: #CCD595;    /*cor de fundo do select, nesse caso estamos usando a cor #CCD595 */
+    color: #331F19;               /*cor do texto do select, nesse caso estamos usando a cor #331F19 */  
+    border-radius: 5PX;             /*borda arredondada do select, nesse caso estamos usando 5 px de borda arredondada */
+    border: nome;                   /*borda do select, nesse caso estamos usando nome para que a borda seja exibida como uma linha sólida na cor #CCD595 */       
+    outline: nome;                  /*remove o contorno do select, nesse caso estamos usando none para remover o contorno */
+}
+
+img{                        /*imagem, nesse caso estamos usando a imagem para exibir o logo do site */
+    width: 5rem;            /*largura da imagem, nesse caso estamos usando 5 rem de largura */  
+    border-radius: 5px;     /*borda arredondada da imagem, nesse caso estamos usando 5 px de borda arredondada */
+}
+
+table{                          /*tabela, nesse caso estamos usando a tabela para exibir os dados */ 
+    width: 100%;                /*largura da tabela, nesse caso estamos usando 100% para que a tabela ocupe toda a largura disponível */
+    border-collapse: collapse;  /*colapsa as bordas da tabela, nesse caso estamos usando collapse para que as bordas sejam colapsadas */ 
+}
+
+th {                                  /*th, nesse caso estamos usando o th para exibir os cabeçalhos da tabela */
+    background-color: #CCD595;      /*cor de fundo do th, nesse caso estamos usando a cor #CCD595 */
+    color: #331F19;                 /*cor do texto do th, nesse caso estamos usando a cor #331F19 */
+    padding:1rem;                     /*padding do th, nesse caso estamos usando 0.6 rem de padding em todos os lados */
+} 
+    
+td {                       /*td, nesse caso estamos usando o td para exibir os dados da tabela */
+    color: #331F19;      /*cor do texto do td, nesse caso estamos usando a cor #331F19 */
+    padding: 1rem;         /*padding do td, nesse caso estamos usando 1 rem de padding em todos os lados */
+    text-align: center;    /*alinhamento do texto no td, nesse caso estamos usando center para que o texto seja alinhado ao centro */ 
+}
+
+tfoot td {                          /*td do tfoot, nesse caso estamos usando o td do tfoot para exibir o rodapé da tabela */
+    background-color: #331F19;    /*cor de fundo do td, nesse caso estamos usando a cor #331F19 */
+    color: #F4F0EA;               /*cor do texto do td, nesse caso estamos usando a cor #F4F0EA */
+}
+
+details{                         /*details, nesse caso estamos usando o details para exibir informações adicionais */
+    background-color: #CCD595; /*cor de fundo do details, nesse caso estamos usando a cor #CCD595 */
+    border-radius: 5px;          /*borda arredondada do details, nesse caso estamos usando 5 px de borda arredondada */
+    padding: 1rem;               /*padding do details, nesse caso estamos usando 1 rem de padding em todos os lados */
+}
+
+summary {                /*summary do details, nesse caso estamos usando o summary para exibir o título do details */
+    color: #331F19;    /*cor do texto do summary, nesse caso estamos usando a cor #331F19 */   
+    margin: 0.5 rem;     /*margem do summary, nesse caso estamos usando 0.5 rem de margem em todos os lados */
+    cursor: pointer;     /*cursor do summary, nesse caso estamos usando pointer para que o cursor seja exibido como uma mãozinha quando o usuário passar o mouse sobre o summary */
+}                                          
+
+ol, ul {                      /*lista ordenada, nesse caso estamos usando a lista ordenada */ 
+    margin-left: 1.5 rem;     /*margem esquerda da lista ordenada, nesse caso estamos usando 1.5 rem de margem esquerda para que a lista seja deslocada para a direita */
+}
+
+ol li, ul li {                /*item da lista ordenada, nesse caso estamos usando o item da lista ordenada */
+    padding: 0.2rem;          /*padding do item da lista ordenada, nesse caso estamos usando 0.2 rem de padding em todos os lados */
+}
+
+fieldset {                          /*fieldset, nesse caso estamos usando o fieldset para agrupar os campos do formulário */    
+    border: 2px solid #CCD595;    /*borda do fieldset, nesse caso estamos usando 2 px de borda sólida na cor #CCD595 */
+    border-radius: 5px;             /*borda arredondada do fieldset, nesse caso estamos usando 5 px de borda arredondada */
+    padding: 1 rem;                 /*padding do fieldset, nesse caso estamos usando 1 rem de padding em todos os lados */
+}
+
+legend {                /*legend, nesse caso estamos usando o legend para exibir o título do fieldset */
+    color: #331F19;   /*cor do texto do legend, nesse caso estamos usando a cor #331F19 */
+padding:0.5 rem;        /*padding do legend, nesse caso estamos usando 0.5 rem de padding em todos os lados */
+}
+
+textarea {                          /*textarea, nesse caso estamos usando o textarea para exibir um campo de texto */        
+    outline: nome;                  /*remove o contorno do textarea, nesse caso estamos usando none para remover o contorno */   
+    border-radius: 5px;             /*borda arredondada do textarea, nesse caso estamos usando 5 px de borda arredondada */
+    border: 2px solid #CCD595;    /*borda do textarea, nesse caso estamos usando 2 px de borda sólida na cor #CCD595 */
+    background-color: transparent;  /*cor de fundo do textarea, nesse caso estamos usando transparente */;
+}
+
+button {                           /*botão, nesse caso estamos usando o botão para exibir um botão de ação */  
+    background-color: #CCD595;  /*cor de fundo do botão, nesse caso estamos usando a cor #CCD595 */
+    border: nome;                 /*borda do botão, nesse caso estamos usando none para remover a borda */
+    padding: 0.8rem;              /*padding do botão, nesse caso estamos usando 0.8 rem de padding em todos os lados */
+    color: #331F19;             /*cor do texto do botão, nesse caso estamos usando a cor #331F19 */
+    border-radius: 5px;           /*borda arredondada do botão, nesse caso estamos usando 5 px de borda arredondada */
+    cursor: pointer;              /*cursor do botão, nesse caso estamos usando pointer para que o cursor seja exibido como uma mãozinha quando o usuário passar o mouse sobre o botão */
+}
+
+footer {                           /*footer, nesse caso estamos usando o footer para exibir o rodapé do site */    
+    background-color: #331F19;   /*cor de fundo do footer, nesse caso estamos usando a mesma cor do header */   
+    padding: 2rem;                 /*padding do footer, nesse caso estamos usando 2 rem de padding em todos os lados */
+    text-align: center;            /*alinhamento do texto no centro do footer */;
+}
+
+.paragrafo-footer {                /*classe do parágrafo do footer, nesse caso estamos usando a classe paragrafo-footer para estilizar o parágrafo do footer */
+    color: #CCD595;             /*cor do texto do parágrafo do footer, nesse caso estamos usando a cor #CCD595 */ 
+}
+
+footer a {                       /*link do footer, nesse caso estamos usando o link do footer para estilizar o link do footer */   
+    text-decoration: nome;       /*remove o sublinhado do link do footer, nesse caso estamos usando none para remover o sublinhado */
+    color: #CCD595;            /*cor do link do footer, nesse caso estamos usando a cor #CCD595 */
+}

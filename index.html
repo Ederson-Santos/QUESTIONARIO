@@ -1,0 +1,237 @@
+<!-- <h1> Olá mundo! </h1> onde h1 - título, h2 título menor e assis sucessivamente
+<p>Tudo  bem?: </p> paragrafo, onde  p é um elemento de bloco que representa um parágrafo de texto
+<h3> bem e vc? </h3>    
+<h4> também </h4>
+<h5> ótimo </h5>
+<h6> que beleza </h6>
+endereço do github: https://github.com/rafaballerini/meu-site-html/blob/main/index.html 
+Comentário: Esse é um exemplo de um quiz interativo para programadores, onde os usuários podem responder a perguntas sobre programação, 
+como HTML, CSS, JavaScript e outros conceitos relacionados. O quiz inclui diferentes tipos de perguntas, como múltipla escolha, 
+texto, data e upload de arquivos. Além disso, há uma tabela de pontuação e uma seção de feedback para os usuários. O código HTML é estruturado com seções, formulários e elementos interativos para criar uma experiência de quiz envolvente. -->
+
+
+    <!DOCTYPE htmal>       <!-- <!DOCTYPE html> é uma declaração que informa ao navegador que este é um documento HTML5. -->
+
+<html>                 <!-- <html> é a raiz do documento HTML, onde todo o conteúdo da página é colocado. -->
+    <head>             <!-- <head> contém metadados sobre o documento, como título, descrição e links para estilos e scripts. -->
+        <meta charset="UTF-8">              <!-- <meta charset="UTF-8"> define a codificação de caracteres do documento como UTF-8, que é uma codificação de caracteres amplamente usada. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">              <!-- <meta> define a largura da viewport para o dispositivo, garantindo que a página seja responsiva em diferentes tamanhos de tela. --> 
+        <title> Quiz para Programadores </title>                                            <!-- <title> define o título da página, que é exibido na aba do navegador. -->
+        <meta name = "description" content="Quiz interativo que testa seu conhecimento">    <!-- <meta> fornece metadados sobre o documento, como a descrição da página. -->
+        <link rel="stylesheet" href="style.css">                                            <!-- <link> conecta o documento HTML a um arquivo CSS externo, onde os estilos da página são definidos. -->    
+    </head>           <!-- </head> fecha a seção de metadados do documento. -->
+
+    <body>           <!-- <body> contém o conteúdo visível da página, como texto, imagens e formulários. --> 
+        <header>     <!-- <header> é a seção de cabeçalho da página, geralmente usada para títulos e navegação. -->
+            <h1> Quiz Interativo para Programadores </h1>                               <!-- <h1> define o título principal da página, que é exibido em destaque. -->
+            <p> Teste Seu Conhecimento em Programação e Verifique sua Pontuação!</p>    <!-- <p> é um parágrafo que fornece uma breve descrição do quiz. -->
+        </header>    <!-- </header> fecha a seção de cabeçalho da página. -->
+
+        <main>                                  <!-- <main> é a seção principal do documento, onde o conteúdo principal é colocado. -->
+        <!-- Introdução -->
+            <section>                           <!-- <section> é uma seção do documento que agrupa conteúdo relacionado. -->
+                <h2> Sobre esse Quiz</h2>       <!-- <h2> define um subtítulo para a seção, que é exibido em destaque. -->
+                <p> <strong> Esse quiz </strong> foi desenvolvido para testar seus conhecimentos em Programação, como <em> <strong> linguagens de programação  </strong> </em>, conceitos básicos e mais.</p>   <!-- <strong> deixa o texto em negrito e <em> em itálico -->
+                <p> Você encontrara diferetes tipos de pergunstas, incluindp múltiplas escolha, texto e perguntas e data.<br> Desafie-se com esse Quiz!</p>                                                     <!-- <br> insere uma quebra de linha -->
+                <p> Você pode encontrar alguns acrômios como <b> <i> <abbr title="HiperText Markup Languiage"> HTML </abbr> e <abbr title="Cascading Style Sheets"> CSS </abbr> </i> </b>, que são comumente usados em questões relacionadas ao desenvolvimento Web.</p>    
+            </section>                          <!-- </section> fecha a seção de introdução do quiz. -->
+
+        <!-- Pergunta 1: múltipla escolha  -->
+            <section>               <!-- <section> inicia uma nova seção para a primeira pergunta do quiz. -->
+                <h2> Pergunta 1: Qual linguagem é usada para estruturar páginas <i> Web </i>? </h2>     <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>              <!-- <form> inicia um formulário para coletar a resposta do usuário. -->
+                    <input type="radio" value = "Python" id = "p1a" name="Pergunta1">       <!-- <input> cria um campo de entrada do tipo rádio, onde o usuário pode selecionar uma opção. -->
+                    <label for="p1a"> Python </label> <br>                                  <!-- <label> associa o texto à opção de entrada, tornando-o clicável, <br> quebra de linha. -->
+                    
+                    <input type="radio" value = "HTML" id = "p1b" name="Pergunta1">         <!-- <input> cria outro campo de entrada do tipo rádio. -->
+                    <label for="p1b"> HTML </label> <br>                                                      
+                    
+                    <input type="radio" value = "Javascript" id = "p1c" name="Pergunta1">   <!-- <input> cria mais um campo de entrada do tipo rádio. -->
+                    <label for="p1c"> Javascript </label> <br>                              <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->
+                                    
+                    <input type="radio" value = "Ruby" id = "p1d" name="Pergunta1">         <!-- <input> cria o último campo de entrada do tipo rádio. -->
+                    <label for="p1d"> Ruby </label> <br>                                    <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->
+                </form>             <!-- </form> fecha o formulário para a primeira pergunta do quiz. -->
+            </section>              <!-- </section> fecha a seção da primeira pergunta do quiz. -->
+
+        <!-- Pergunta 2: texto  -->
+            <section>          <!-- <section> inicia uma nova seção para a segunda pergunta do quiz. -->
+                <h2> Pergunta 2; Na Url https://www.google.com o trecho "google.com" é o _____ </h2>    <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>                                                                                  <!-- <form> inicia um formulário para coletar a resposta do usuário. -->
+                    <input type="text" id="p2" name="Pergunta2" placeholder=" Dígite sua resposta ... ">    <!-- <input> cria um campo de entrada de texto, onde o usuário pode digitar sua resposta. -->
+                </form>       <!-- </form> fecha o formulário para a segunda pergunta do quiz. -->
+            </section>        <!-- </section> fecha a seção da segunda pergunta do quiz. -->
+
+        <!-- Pergunta 3: senhas e ocultar senhas-->
+            <section>         <!-- <section> inicia uma nova seção para a terceira pergunta do quiz. -->
+                <h2> Pergunta 3: Escreva um exemplo de senha forte: </h2>                <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>        <!-- <form> inicia um formulário para coletar a resposta do usuário. -->
+                    <input type="password" id = "p3" name = "Pergunta3"placeholder = "Dígite uma senha ... ">       <!-- <input> cria um campo de entrada de senha, onde o usuário pode digitar sua resposta. O texto digitado será oculto para proteger a privacidade do usuário. -->
+                </form>       <!-- </form> fecha o formulário para a terceira pergunta do quiz. -->
+            </section>        <!-- </section> fecha a seção da terceira pergunta do quiz. -->
+
+        <!-- Pergunta 4: entrada de data -->
+            <section>         <!-- <section> inicia uma nova seção para a quarta pergunta do quiz. -->
+                <h2> Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2> <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>        <!-- <form> inicia um formulário para coletar a resposta do usuário. -->
+                    <input type="date" id = "p4" name = "Pergunta4">        <!-- <input> cria um campo de entrada de data, onde o usuário pode selecionar uma data específica. -->
+                </form>       <!-- </form> fecha o formulário para a quarta pergunta do quiz. --> 
+            </section>        <!-- </section> fecha a seção da quarta pergunta do quiz. -->
+
+            <!-- Pergunta 5: selação múltipla dados --> 
+            <section>         <!-- <section> inicia uma nova seção para a quinta pergunta do quiz. -->
+                <h2> Pergunta 5: Quais dessas tecnologias são considerasas Linguagens de Programação? </h2>     <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>        <!-- <form> inicia um formulário para coletar as respostas do usuário. -->           
+                    <input type="checkbox" id="p5a" name = "Pergunta5" value = "Javascript">    <!-- <input> cria um campo de entrada do tipo checkbox, onde o usuário pode selecionar várias opções. -->
+                    <label for="p5a"> Javascript </label> <br>                                  <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->    
+                    
+                    <input type="checkbox" id="p5b" name = "Pergunta5" value = "HTML">       <!-- <input> cria outro campo de entrada do tipo checkbox. -->
+                    <label for="p5b"> HTML </label> <br>                                     <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->
+
+                    <input type="checkbox" id="p5c" name = "Pergunta5" value = "Java">       <!-- <input> cria mais um campo de entrada do tipo checkbox. -->
+                    <label for="p5c"> Java </label> <br>                                     <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->
+
+                     <input type="checkbox" id="p5d" name = "Pergunta5" value = "CSS" >     <!-- <input> cria o último campo de entrada do tipo checkbox. -->
+                    <label for="p5d"> CSS </label> <br>                                     <!-- <label> associa o texto à opção de entrada, tornando-o clicável. -->
+                </form>                                                                     <!-- </form> fecha o formulário para a quinta pergunta do quiz. -->
+            </section> <!-- </section> fecha a seção da quinta pergunta do quiz. -->
+
+             <!-- Pergunta 6: UPLOAD de arquivo -->
+            <section>           <!-- <section> inicia uma nova seção para a sexta pergunta do quiz. -->
+                <h2> Pergunta 6: Faça o upload de um arquivo contedno código HTML:</h2>     <!-- <h2> define o título da pergunta, que é exibido em destaque. -->   
+                <form>                                                                      <!-- <form> inicia um formulário para coletar o arquivo do usuário. -->
+                    <input type="file" id="p6" name="Pergunta6">                            <!-- <input> cria um campo de entrada do tipo arquivo, onde o usuário pode selecionar um arquivo para upload. -->             
+                </form>                                                                     <!-- </form> fecha o formulário para a sexta pergunta do quiz. -->     
+            </section>          <!-- </section> fecha a seção da sexta pergunta do quiz. -->
+            <!-- Pergunta 7: Menu Suspenso -->
+            <section>                                                                            <!-- <section> inicia uma nova seção para a sétima pergunta do quiz. -->    
+                <h2> Pergunta 7: Selecione qual o atributo do input que define seu tipo:</h2>
+                <form>          <!-- <form> inicia um formulário para coletar a resposta do usuário. -->
+                    <select name = "Pergunta7" id="p7">                                          <!-- <select> cria um menu suspenso, onde o usuário pode selecionar uma opção. -->
+                        <option value ="id"> id </option>                                        <!-- <option> define uma opção dentro de um menu suspenso, nesse caso <id> -->
+                        <option value="type"> type </option>                                     <!-- <option> define uma opção dentro de um menu suspenso, nesse caso <type>. -->
+                        <option value="placeholder"> placeholder </option>                       <!-- <option> define uma opção dentro de um menu suspenso, nesse caso <placeholder> -->
+                        <option value="name"> name </option>                                     <!-- <option> define uma opção dentro de um menu suspenso, nesse caso <name>-->       
+                        <input type="text" id="p7" name="Pergunta7" placeholder="Dígite sua resposta ... "> <!-- <input> cria um campo de entrada de texto, onde o usuário pode digitar sua resposta. -->
+               </form>          <!-- </form> fecha o formulário para a sétima pergunta do quiz. -->       
+            </section>          <!-- </section> fecha a seção da sétima pergunta do quiz. -->
+
+            <!-- Pergunta 8: Adiciona  imagem -->
+            <section>           <!-- <section> inicia uma nova seção para a oitava pergunta do quiz. -->
+                <h2> Pergunta 8: Qual a linguagem de programação é representada pelo logotipo abaixo? </h2>     <!-- <h2> define o título da pergunta, que é exibido em destaque. -->
+                <form>          <!-- <form> inicia um formulário para coletar a resposta do usuário. -->                    
+                    <img src="assets/java.png" alt="logotipo de um Linguagem de Programação"> <br> <br>         <!-- <img> exibe uma imagem, onde o atributo src define o caminho da imagem e alt fornece uma descrição alternativa. -->              
+                    <input type="text" id="p8" name="Pergunta8" placeholder="Dígite sua resposta ... ">         <!-- <input> cria um campo de entrada de texto, onde o usuário pode digitar sua resposta. -->
+                </form>         <!-- </form> fecha o formulário para a oitava pergunta do quiz. --> 
+            </section>          <!-- </section> fecha a seção da oitava pergunta do quiz. -->   
+            
+            <!-- Outro Método adicionar legenda na figura-->
+            <section>                <!-- <section> inicia uma nova seção para a conclusão do quiz. -->
+                <h2> Outro métodos de acrescentar figura</h2>           <!-- <h2> define o título da seção, que é exibido em destaque. -->
+                <figure>           <!-- <figure> é um elemento que agrupa uma imagem e sua legenda. -->    
+                     <img src="assets/java.png" alt="logotipo de um Linguagem de Programação"> <br> <br>   <!-- <img> exibe uma imagem, onde o atributo src define o caminho da imagem e alt fornece uma descrição alternativa. -->
+                    <figcaption> Figura 1: Logotipo de uma linguegem de programação </figcaption>          <!-- <figcaption> define a legenda da imagem, que é exibida abaixo da imagem. --> 
+                </figure>          <!-- </figure> fecha o elemento figure que contém a imagem e sua legenda. -->
+            </section>  <!-- </section> fecha a seção de conclusão do quiz. -->
+
+            <!-- Tabela de Pontuação-->
+            <section>                                <!-- <section> inicia uma nova seção para a tabela de pontuação do quiz. -->
+                <h2> Tabela de Pontuação </h2>       <!-- <h2> define o título da seção,Tabela de Pontuação que é exibido em destaque. -->
+                <table border="1">                   <!-- <table> cria uma tabela, onde o atributo border define a largura da borda da tabela. -->
+                    <thead>                          <!-- <thead> define o cabeçalho da tabela, onde os títulos das colunas são colocados. -->
+                        <tr>                         <!-- <tr> define uma linha na tabela. -->
+                            <th> Pontuação </th>     <!-- <th> define um cabeçalho de tabela primeira coluna, que é exibido em negrito. --> 
+                            <th> Avaliação </th>     <!-- <th> define outro cabeçalho de tabela seguna coluna, que é exibido em negrito. -->
+                        </tr>                        <!-- </tr> fecha a linha do cabeçalho da tabela. -->
+                    </thead>                         <!-- </thead> fecha o cabeçalho da tabela. -->
+                    <tbody>                          <!-- <tbody> define o corpo da tabela, onde os dados são colocados. -->
+                        <tr>                         <!-- <tr> define uma linha na tabela. -->
+                            <td> 0-2 </td>           <!-- <td> define uma célula de tabela na primeira coluna, onde a pontuação é exibida. -->
+                            <td> Não desista! Cada tentativa gera uma nova oportunidade de aprender. </td>      <!-- <td> define uma célula de tabela na segunda coluna, onde a avaliação é exibida. -->
+                        </tr>                        <!-- </tr> fecha a linha da tabela. -->
+                        
+                        <tr>                         <!-- <tr> define uma linha na tabela. -->
+                            <td> 3-4 </td>           <!-- <td> define uma célula de tabela na primeira coluna, onde a pontuação é exibida. -->
+                            <td> Você ainda pode melhorar! Vamos estudar e praticar mais Programação? </td> <!-- <td> define uma célula de tabela na segunda coluna, onde a avaliação é exibida. -->
+                        </tr>                        <!-- </tr> fecha a linha da tabela. -->
+                      
+                        <tr>                         <!-- <tr> define uma linha na tabela. -->
+                            <td> 5-7 </td>           <!-- <td> define uma célula de tabela na primeira coluna, onde a pontuação é exibida. -->     
+                            <td> Hum, que Bom! Seu conhecimento em Programação está satisfatório! </td> 
+                        </tr>                        <!-- </tr> fecha a linha da tabela. -->
+                       
+                        <tr>                         <!-- <tr> define uma linha na tabela. -->
+                            <td> 8 </td> <td> Perfeito! Parabéns, seu  conhecimento sobre Programação está ótimo! </td>  <!-- <td> define uma célula de tabela na segunda coluna, onde a avaliação é exibida. -->   
+                        </tr>                        <!-- </tr> fecha a linha da tabela. -->
+                    </tbody>                         <!-- </tbody> fecha o corpo da tabela. -->
+                    <tfoot>                          <!-- <tfoot> define o rodapé da tabela, onde informações adicionais podem ser colocadas. -->
+                        <tr>                         <!-- <tr> define uma linha no rodapé da tabela. -->
+                            <td colspan="2"> Boa Sorte na próxima"! Estude mais para melhorar </td>          <!-- <td> define uma célula de tabela que abrange duas colunas, <colspan> serve para mesclar a mensagem em uma célula (linha/coluna). -->
+                        </tr>                        <!-- </tr> fecha a linha do rodapé da tabela. -->
+                    </tfoot>                         <!-- </tfoot> fecha o rodapé da tabela. -->
+                </table>                             <!-- </table> fecha a tabela de pontuação do quiz. -->
+            </section>                               <!-- </section> fecha a seção da tabela de pontuação do quiz. -->
+
+            <!-- Criar Lista de Resposta-->
+            <section>                                               <!-- <section> inicia uma nova seção para verificar as respostas do quiz. -->                <h2> Verifique suas respostas!</h2>
+                <details>                                           <!-- <details> cria um elemento que pode ser expandido ou recolhido para mostrar ou ocultar conteúdo adicional. -->
+                <summary> Clique Aqui e verifique as Respostas </summary>       <!-- <summary> define o título do conteúdo oculto, que é exibido quando o elemento details é recolhido. -->             
+                <ul>                                                <!-- <ul> cria uma lista não ordenada, onde os itens são exibidos com marcadores. -->
+                    <li> HTML </li>                                 <!-- <li> define um item de lista na lista não ordenada. -->    
+                    <li> Domínio </li>                              <!-- <li> define outro item de lista na lista não ordenada. -->
+                    <li> SenhaForte:Hee@2225abf </li>               <!-- <li> define mais um item de lista na lista não ordenada. -->
+                    <li> 1991 </li>                                 <!-- <li> define mais um item de lista na lista não ordenada. -->
+                    <li> Javascript, Java </li>                     <!-- <li> define mais um item de lista na lista não ordenada. -->
+                    <li> Arquivo deve ter extensão: .html </li>     <!-- <li> define mais um item de lista na lista não ordenada. -->
+                    <li> type </li>                                 <!-- <li> define mais um item de lista na lista não ordenada. -->
+                    <li> Java </li>                                 <!-- <li> define mais um item de lista na lista não ordenada. -->
+                </ul> <br>                                          <!-- </ul> fecha a lista não ordenada, <br> pula linha após -->                
+               
+                <ol>                                                 <!-- <ol> cria uma lista ordenada, onde os itens são exibidos com números. -->
+                    <li> HTML </li>                                  <!-- <li> define um item de lista na lista ordenada. -->
+                    <li> Domínio </li>                               <!-- <li> define outro item de lista na lista ordenada. -->        
+                    <li> SenhaForte:Hee@2225abf </li>                <!-- <li> define mais um item de lista na lista ordenada. -->       
+                    <li> 1991 </li>                                  <!-- <li> define mais um item de lista na lista ordenada. -->
+                    <li> Javascript, Java </li>                      <!-- <li> define mais um item de lista na lista ordenada. -->
+                    <li> Arquivo deve ter extensão: .html </li>      <!-- <li> define mais um item de lista na lista ordenada. -->
+                    <li> type </li>                                  <!-- <li> define mais um item de lista na lista ordenada. -->
+                    <li> Java, Darth Vader </li>                     <!-- <li> define mais um item de lista na lista ordenada. -->
+                </ol>                                                <!-- </ol> fecha a lista ordenada. -->
+                </details>                                           <!-- </details> fecha o elemento details que contém as respostas do quiz. --> 
+            </section>                                               <!-- </section> fecha a seção de verificação das respostas do quiz. -->
+            
+            <!--Formulário de Feedback-->
+            <section>                                               <!-- <section> inicia uma nova seção para o formulário de feedback. -->
+                <h2> Nos de um Feedback --</h2>                     <!-- <h2> define o título da seção, que é exibido em destaque. -->
+                <form>                                              <!-- <form> inicia um formulário para coletar o feedback do usuário. -->
+                    <fieldset>                                      <!-- <fieldset> agrupa elementos relacionados dentro de um formulário, criando uma caixa ao redor deles. --> 
+                    <legend> Informações de Contato: </legend>              <!-- <legend> define um título para o grupo de elementos dentro do fieldset, que é exibido em destaque. -->
+                    <label for= "nome" > Nome: </label>                     <!-- <label> associa o texto ao campo de entrada, tornando-o clicável e possível de interagir. -->
+                    <input type= "text" id= nome name= "nome" > <br>        <!-- <input> cria um campo de entrada de texto, onde o usuário pode digitar seu nome. -->                       
+                
+                    <label for= "email"> Email: </label>                    <!-- <label> associa o texto ao campo de entrada, tornando-o clicável e possível de interagir. -->
+                    <input type= "email" id= email name= "email" > <br>     <!-- <input> cria um campo de entrada de email, onde o usuário pode digitar seu endereço de email. -->
+                    
+                    <label for= "telefone" >Telefone: </label>              <!-- <label> associa o texto ao campo de entrada, tornando-o clicável e possível de interagir. -->
+                    <input type= "telefone" id= telefone name= "telefone" > <br>    <!-- <input> cria um campo de entrada de telefone, onde o usuário pode digitar seu número de telefone. -->
+                   
+                    <label for= "comentários"> Comentários: </label> <br>            <!-- <label> associa o texto ao campo de entrada, tornando-o clicável. -->
+                    <textarea name= "comentários" id="comentários" rows="4" cols="50" placeholder="Digíte aqui seu comentários"></textarea> <br>    <!-- <textarea> cria um campo de entrada de texto multilinha, onde o usuário pode digitar comentários. -->  
+                    
+                    <button onclick="alert('FEEDBACK ENVIADO')" > Envie o Feedback </button>     <!-- <button> cria um botão que, quando clicado, exibe um alerta informando que o feedback foi enviado. -->
+                    </fieldset>      <!-- </fieldset> fecha o grupo de elementos relacionados dentro do formulário. -->
+                </form>              <!-- </form> fecha o formulário de feedback. -->                        
+            </section>               <!-- </section> fecha a seção do formulário de feedback. -->
+        </main>                      <!-- </main> fecha a seção principal do documento, onde todo o conteúdo principal é colocado. -->
+        <footer>                     <!-- <footer> é a seção de rodapé da página, onde informações adicionais são colocadas. -->
+            <p> &copy; Quiz de Programação. Todos os Direitos reservados!</p>        <!-- <p> é um parágrafo que fornece informações adicionais sobre o quiz, como direitos autorais. -->
+            <p> Para conhecer mais Sobre Mim me siga nas redes sociais <a href="sobremim.html" target= "_nlank" > Clique Aqui!</a> </p>     <!-- <p> é um parágrafo que fornece informações adicionais sobre o quiz. -->
+        </footer>                   <!-- </footer> fecha a seção de rodapé da página, onde informações adicionais são colocadas. -->
+    </body>                         <!-- </body> fecha a seção do corpo do documento, onde todo o conteúdo visível da página é colocado. -->    
+</html>                             <!-- </html> fecha a raiz do documento HTML, indicando o fim do conteúdo da página. --> 
+
+<!-- Esse é um exemplo de um quiz interativo para programadores, onde os usuários podem responder a perguntas sobre programação, 
+    como HTML, CSS, JavaScript e outros conceitos relacionados. O quiz inclui diferentes tipos de perguntas, como múltipla escolha, 
+    texto, data e upload de arquivos. Além disso, há uma tabela de pontuação e uma seção de feedback para os usuários.
+    O código HTML é estruturado com seções, formulários e elementos interativos para criar uma experiência de quiz envolvente. -->
+
