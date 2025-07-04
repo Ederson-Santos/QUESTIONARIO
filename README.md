@@ -1,1 +1,1 @@
-Projeto desenvolvido a partir do meu-site-html-css da querida @rafaballerini, a qual assiste no Youtube - Curso completo de HTML - seu PRIMEIRO SITE DO ZERO para iniciar em PROGRAMAÇÃO!
+Projeto desenvolvido a partir Curso completo de HTML - seu PRIMEIRO SITE DO ZERO para iniciar em PROGRAMAÇÃO! ministrado por @rafaballerini, disponível em https://www.youtube.com/watch?v=Fhy-5CtVkiM. 
